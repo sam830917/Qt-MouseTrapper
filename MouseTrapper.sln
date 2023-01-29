@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MouseTrapper", "MouseTrapper\MouseTrapper.vcxproj", "{14632E44-C0E6-4566-9256-3108EEF5327A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{14632E44-C0E6-4566-9256-3108EEF5327A}.Debug|x64.ActiveCfg = Debug|x64
+		{14632E44-C0E6-4566-9256-3108EEF5327A}.Debug|x64.Build.0 = Debug|x64
+		{14632E44-C0E6-4566-9256-3108EEF5327A}.Release|x64.ActiveCfg = Release|x64
+		{14632E44-C0E6-4566-9256-3108EEF5327A}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {433FB00E-538D-4864-989E-885CAD86B737}
+	EndGlobalSection
+EndGlobal
