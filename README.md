@@ -14,7 +14,7 @@ This program allows you to clip the cursor within selected monitors.
 
 # How to Use
 
-1. Download the zip file in release page.
+1. Download the zip file in [release page](https://github.com/sam830917/Qt-MouseTrapper/releases).
 2. Extract the zip file and double click "MouseTrapper.exe".
 3. Monitor infomation should update while opening, if not just click Update Monitor button.
 4. Check/uncheck the monitor that you want to clip the cursor.
