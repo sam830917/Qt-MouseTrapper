@@ -34,3 +34,4 @@ The clipping range only works with continuous range if you have more than 2 moni
 * [flaticon](https://www.flaticon.com/free-icon/mouse_3249525?term=mouse&page=1&position=8&origin=search)
 * [Win32 ScreenArray](https://gist.github.com/kaimingguo/f812ab420772c7f09e8bfd733c849345)
 * [MouseTrapper](https://github.com/DreamyCecil/MouseTrapper)
+* [QHotkey](https://github.com/Skycoder42/QHotkey)
