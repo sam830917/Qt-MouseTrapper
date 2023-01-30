@@ -12,6 +12,18 @@ This program allows you to clip the cursor within selected monitors.
 
 ![demo_img2](/Img/img-2.png)
 
+# How to Use
+
+1. Download the zip file in release page.
+2. Extract the zip file and double click "MouseTrapper.exe".
+3. Monitor infomation should update while opening, if not just click Update Monitor button.
+4. Check/uncheck the monitor that you want to clip the cursor.
+5. Toggle the trap by clicking the trap button or Ctrl + F11.
+
+The clipping range only works with continuous range if you have more than 2 monitors!
+
+![demo_img3](/Img/img-3.png)
+
 # Environment
 
 * Visual Studio 2022
