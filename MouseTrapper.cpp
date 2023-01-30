@@ -56,7 +56,15 @@ void MouseTrapper::UpdateMouse()
             continue;
 
         RECT& rect = m_screenArray.m_monitorInfos[i];
-        screenRect = screenRect.united(QRect(rect.left, rect.top, rect.right, rect.bottom));
+        if (screenRect.size().isNull())
+        {
+            screenRect = QRect(rect.left, rect.top, rect.right, rect.bottom);
+        }
+        else
+        {
+            screenRect = QRect(qMin(screenRect.left(), rect.left), qMin(screenRect.top(), rect.top),
+                qMax(screenRect.right(), rect.right), qMax(screenRect.bottom(), rect.bottom));
+        }
     }
     
     // Clip cursor
@@ -81,7 +89,7 @@ void MouseTrapper::UpdateMonitorInfo()
     for (size_t i = 0; i < m_screenArray.m_monitorInfos.size(); i++)
     {
         RECT& rect = m_screenArray.m_monitorInfos[i];
-        QString itemStr = QString("Monitor %1 Top Left (%2, %3) Bottom Right (%4, %5)").arg(i + 1)
+        QString itemStr = QString("Monitor %1 - Top Left (%2, %3) Bottom Right (%4, %5)").arg(i + 1)
             .arg(rect.left).arg(rect.top).arg(rect.right).arg(rect.bottom);
         ui.m_monitorInfoListWidget->addItem(itemStr);
 
