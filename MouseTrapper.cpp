@@ -58,12 +58,12 @@ void MouseTrapper::UpdateMouse()
         RECT& rect = m_screenArray.m_monitorInfos[i];
         if (screenRect.size().isNull())
         {
-            screenRect = QRect(rect.left, rect.top, rect.right, rect.bottom);
+            screenRect = QRect(QPoint(rect.left, rect.top), QPoint(rect.right, rect.bottom));
         }
         else
         {
-            screenRect = QRect(qMin(screenRect.left(), rect.left), qMin(screenRect.top(), rect.top),
-                qMax(screenRect.right(), rect.right), qMax(screenRect.bottom(), rect.bottom));
+            screenRect = QRect(QPoint(qMin(screenRect.left(), rect.left), qMin(screenRect.top(), rect.top)),
+                QPoint(qMax(screenRect.right(), rect.right), qMax(screenRect.bottom(), rect.bottom)));
         }
     }
     
